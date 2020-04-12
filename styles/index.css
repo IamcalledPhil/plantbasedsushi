@@ -1,0 +1,75 @@
+@media (min-width: 712px) {
+    .wrapper {
+
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        perspective: 2px;
+      }
+      
+      .section {
+        position: relative;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-shadow: 0 0 5px #000;
+      }
+      
+      .parallax::after {
+        content: " ";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      
+        transform: translateZ(-2px) scale(2);
+    
+        background-size: 100%;
+        z-index: -1;
+      }
+
+      .static {
+        background-image: url('/res/png/diagonal-bottom.png');
+        background-size: cover;
+      }
+      
+
+      .bg1::after {
+        background-image: url('/res/jpg/Sushi-TokyoDrift@TheStormFactoryNL_12.jpg');
+        background-size: cover;
+      }
+      
+      .bg2::after {
+        background-image: url('/res/jpg/Sushi-TokyoDrift@TheStormFactoryNL_19.jpg');
+        background-size: cover;
+      }
+}
+
+
+@media (max-width: 711px) {
+
+  
+  .static {
+    background-image: url('/res/png/diagonal-bottom.png');
+    background-size: cover;
+    z-index: 2;
+    height: 30vh;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .bg1 {
+    background-image: url('/res/jpg/Sushi-TokyoDrift@TheStormFactoryNL_12.jpg');
+    background-size: cover;
+    height: 30vh;
+  }
+  
+  .bg2 {
+    background-image: url('/res/jpg/Sushi-TokyoDrift@TheStormFactoryNL_19.jpg');
+    background-size: cover;
+    height: 30vh;
+  }
+}
