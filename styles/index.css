@@ -1,3 +1,4 @@
+/* desktop */
 @media (min-width: 712px) {
     .wrapper {
 
@@ -48,17 +49,26 @@
       }
 }
 
-
+/* mobile */
 @media (max-width: 711px) {
-
-  
   .static {
     background-image: url('/res/png/diagonal-bottom.png');
     background-size: cover;
     z-index: 2;
     height: 30vh;
-    position: absolute;
+    position: relative;
     width: 100%;
+    top: -7vh;
+  }
+
+  .section {
+    position: relative;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 0 0 5px #000;
   }
   
   .bg1 {
@@ -71,5 +81,13 @@
     background-image: url('/res/jpg/Sushi-TokyoDrift@TheStormFactoryNL_19.jpg');
     background-size: cover;
     height: 30vh;
+    position: relative;
+    top: -14vh;
   }
+}
+
+.photo-overlay {
+    padding: 2em;
+    background-color: black;
+    opacity: 70%;
 }

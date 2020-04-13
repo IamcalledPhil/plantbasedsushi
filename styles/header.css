@@ -23,7 +23,7 @@
     padding: 0em 1em 1.5em 1em;
 }
 
-.nav-items a {
+.nav-items li a {
     text-decoration: none;
     color: white;
     margin: 0em 2em;
