@@ -6,7 +6,6 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;    
     height: min-content;
-
 }
 
 .logo { 
@@ -28,6 +27,7 @@
     color: white;
     margin: 0em 2em;
 }
+
 .social-media-icons {  
     grid-area: 1 / 3 / 1 / 3; 
 }
@@ -35,9 +35,16 @@
 .social-media-icons a  {
     color: white;
     height: 2vh;
-    font-size: 2em   ;
+    font-size: 2em;
     float: right;
     margin-right: 3vw;
     margin-top: 2vw;
     text-decoration: none;
+}
+
+@media (max-width: 711px) {
+    .social-media-icons a  {
+        margin-right: 6vw;
+        margin-top: 6vw;
+    }
 }
