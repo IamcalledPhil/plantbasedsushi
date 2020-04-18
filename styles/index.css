@@ -1,93 +1,102 @@
-/* desktop */
-@media (min-width: 712px) {
-    .wrapper {
 
-        height: 100vh;
-        overflow-x: hidden;
-        overflow-y: auto;
-        perspective: 2px;
-      }
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+}
       
-      .section {
-        position: relative;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        text-shadow: 0 0 5px #000;
-      }
-      
-      .parallax::after {
-        content: " ";
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-      
-        transform: translateZ(-2px) scale(2);
-    
-        background-size: 100%;
-        z-index: -1;
-      }
-
-      .static {
-        background-image: url('/res/png/diagonal-bottom.png');
-        background-size: cover;
-      }
-      
-
-      .bg1::after {
-        background-image: url('/res/jpg/Sushi-TokyoDrift@TheStormFactoryNL_12.jpg');
-        background-size: cover;
-      }
-      
-      .bg2::after {
-        background-image: url('/res/jpg/Sushi-TokyoDrift@TheStormFactoryNL_19.jpg');
-        background-size: cover;
-      }
+.section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 0 5px #000;
 }
 
-/* mobile */
-@media (max-width: 711px) {
-  .static {
-    background-image: url('/res/png/diagonal-bottom.png');
-    background-size: cover;
-    z-index: 2;
-    height: 30vh;
-    position: relative;
-    width: 100%;
-    top: -7vh;
-  }
-
-  .section {
-    position: relative;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-shadow: 0 0 5px #000;
-  }
-  
-  .bg1 {
-    background-image: url('/res/jpg/Sushi-TokyoDrift@TheStormFactoryNL_12.jpg');
-    background-size: cover;
-    height: 30vh;
-  }
-  
-  .bg2 {
-    background-image: url('/res/jpg/Sushi-TokyoDrift@TheStormFactoryNL_19.jpg');
-    background-size: cover;
-    height: 30vh;
-    position: relative;
-    top: -14vh;
-  }
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-2px) scale(2);
+  background-size: 100%;
+  z-index: -1;
 }
+
+.static {
+  background-size: cover;
+}
+
+.bg1::after {
+  background-image: url('/res/jpg/Sushi-TokyoDrift@TheStormFactoryNL_12.jpg');
+  background-size: cover;
+}
+
+.bg2::after {
+  background-image: url('/res/jpg/Sushi-TokyoDrift@TheStormFactoryNL_19.jpg');
+  background-size: cover;
+}
+
+.bg3::after {
+  background-image: url('/res/jpg/Sushi-TokyoDrift@TheStormFactoryNL_15.jpg');
+  background-size: cover;
+}
+
 
 .photo-overlay {
     padding: 2em;
     background-color: black;
     opacity: 70%;
 }
+
+.main-content-1 {
+  background-image: url('/res/png/smallbrush-diagonal.png');
+}
+
+.main-content-2 {
+  background-image: url('/res/png/diagonal-bigbrush.png');
+}
+
+.main-content-3 {
+  background-image: url('/res/png/bigbrush-flat.png');
+}
+
+/* mobile */
+@media (max-width: 711px) {
+  .wrapper {
+    perspective: none;
+  }
+  .static {
+    z-index: 2;
+    position: relative;
+    width: 100%;
+  }
+
+  .parallax {
+    height: min-content;
+  }
+  
+  .parallax::after {
+    transform: translateZ(-2px) scale(2);
+  }
+
+  .main-content-1 {
+    background-image: url('/res/png/smallbrush-diagonal-mob.png');
+  }
+  
+  .main-content-2 {
+    background-image: url('/res/png/diagonal-bigbrush-mob.png');
+  }
+  
+  .main-content-3 {
+    background-image: url('/res/png/bigbrush-flat-mob.png');
+    height: 20vh;
+  }
+
+}
+
