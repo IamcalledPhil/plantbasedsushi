@@ -1,4 +1,9 @@
 
+body {
+  background-color: black;
+  margin: 0px;
+}
+
 .wrapper {
   height: 100vh;
   overflow-x: hidden;
@@ -150,11 +155,40 @@
   }
 
   .static {
-    height: 80vh;
+    height: min-content;
   }
 
   .static-background {
     flex-direction: column;
+    width: 100vw;
+  }
+
+   .infoleft{
+    margin: 2em 0;
+    border-image-width: 12px 35px 12px 0;
+    border-image-outset: 8px 25px 9px 0;
+  }
+
+  .inforight {
+    margin: 2em 0 2em auto;
+    border-image-width: 12px 0 10px 47px;
+    border-image-outset: 9px 0 8px 25px;
+  }
+
+  .illustrations-left , .illustrations-right {
+    margin: 1em auto;
+  }
+
+  .info-section-background {
+    width: 60vw;
+  }
+
+  .main-content-1 {
+    border-image-outset: 36px 0px 36px 0px;
+  }
+
+  .main-content-2 {
+    border-image-outset: 36px 0px 37px 0px;
   }
   
   .main-content-3 {
