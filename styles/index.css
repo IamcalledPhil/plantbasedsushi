@@ -44,28 +44,41 @@
   align-items: flex-start;
 }
 
-.static-background img {
+.illustrations-right {
   width: 30vw;
-  margin: auto 10vw auto 0;
-  float: right;
-
+  margin: auto 0 auto auto;
 }
 
-.info-section {
+.illustrations-left {
+  width: 30vw;
+  margin: auto auto auto 0;
+}
+
+.infoleft {
   border-style: solid;
+  margin: auto 5vw auto 0;
   border-image-slice: 60 300 27 0;
   border-image-width: 12px 47px 15px 0;
   border-image-outset: 9px 45px 12px 0;
   border-image-repeat: stretch stretch;
   border-image-source:url('/res/png/textsection-left.png');
-  color: white;
-  margin: auto 10vw auto 0;
+}
+
+.inforight {
+  border-style: solid;
+  margin: auto 0 auto 5vw;
+  border-image-slice: 60 0 27 300;
+  border-image-width: 12px 0 15px 47px;
+  border-image-outset: 9px 0 12px 35px;
+  border-image-repeat: stretch stretch;
+  border-image-source:url('/res/png/textsection-right.png');
 }
 
 .info-section-background {
   padding: 1em;
   width: 50vw;
   background-color: #12171A;
+  color: white;
 }
 
 
