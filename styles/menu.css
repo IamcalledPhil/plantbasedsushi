@@ -1,0 +1,181 @@
+
+.wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+  }
+        
+  .section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .parallax::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(-2px) scale(2);
+    background-size: 100%;
+    z-index: -1;
+  }
+
+  .parallax {
+    color: white;
+  }
+  
+  .static {
+    border-top-style: solid;
+    color: #12171A;
+  }
+  
+  .static-background {
+    background-color: #41695B;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .bg1::after {
+    background-image: url('/res/jpg/Sushi-TokyoDrift@TheStormFactoryNL_7.jpg');
+    background-size: cover;
+  }
+  
+  
+  .photo-overlay {
+      padding: 2em;
+      background-color: black;
+      opacity: 70%;
+  }
+  
+  .main-content-1 {
+    border-image-slice: 160 0 0 0;
+    border-image-width: 40px 0px 0px 0px;
+    border-image-repeat: stretch stretch;
+    border-image-outset: 36px 0px 0px 0px;
+    border-image-source:url('/res/png/menutopborder.png')
+  }
+
+.menu-card {
+    height: 80%;
+    width: 80%;
+    margin: 0 auto;
+    border-image-slice:53 53 53 53;
+    border-image-width:20px 20px 20px 20px;
+    border-image-outset:18px 17px 17px 17px;
+    border-image-repeat:stretch stretch;
+    border-image-source:url('/res/png/menucard.png');
+    border-style: solid;
+}
+
+.menu-background {
+      background-color: white;
+      width: 100%;
+      height: 100%;
+  }
+
+.menu-selector {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 2em;
+    padding: 3em 2em;
+}
+
+.menu-selector button {
+    background-color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.menu-selector button:hover {
+    text-decoration: underline;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.menu-selector button:focus {
+    text-decoration: underline;
+    font-weight: 700;
+    outline: none;
+}
+
+.menu-content {
+    display: flex;
+    flex-direction: column;
+}
+
+#drinks, #desserts {
+    display: none;
+}
+
+.menu-item {
+    margin-bottom: 1em;
+    margin: 1em auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.menu-item p {
+    margin: 0.3rem auto;
+}
+
+.menu-item .name {
+    font-size: 1.3rem;
+}
+
+.menu-item .description, .menu-item .price {
+    font-style: italic;
+}
+
+.menu-content img {
+    width: 3em;
+    margin: 2em auto 1em auto;
+}
+  
+    
+  
+  /* mobile */
+  @media (max-width: 711px) {
+    .wrapper {
+      perspective: none;
+    }
+    .static {
+      z-index: 2;
+      position: relative;
+      width: 100%;
+    }
+  
+    .parallax {
+      height: 40vh;
+    }
+    
+    .parallax::after {
+      transform: translateZ(0px) scale(1);
+    }
+  
+    .static {
+      height: 80vh;
+    }
+    
+    .main-content-3 {
+      height: 10vh;
+    }
+  
+  }
+  
+  

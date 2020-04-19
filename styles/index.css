@@ -12,8 +12,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  text-shadow: 0 0 5px #000;
 }
 
 .parallax::after {
@@ -28,8 +26,13 @@
   z-index: -1;
 }
 
+.parallax {
+  color: white;
+}
+
 .static {
   border-top-style: solid;
+  color: #12171A;
 }
 
 .static-background {
@@ -37,9 +40,34 @@
   height: 100%;
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start;
 }
+
+.static-background img {
+  width: 30vw;
+  margin: auto 10vw auto 0;
+  float: right;
+
+}
+
+.info-section {
+  border-style: solid;
+  border-image-slice: 60 300 27 0;
+  border-image-width: 12px 47px 15px 0;
+  border-image-outset: 9px 45px 12px 0;
+  border-image-repeat: stretch stretch;
+  border-image-source:url('/res/png/textsection-left.png');
+  color: white;
+  margin: auto 10vw auto 0;
+}
+
+.info-section-background {
+  padding: 1em;
+  width: 50vw;
+  background-color: #12171A;
+}
+
 
 .bg1::after {
   background-image: url('/res/jpg/Sushi-TokyoDrift@TheStormFactoryNL_12.jpg');
@@ -110,6 +138,10 @@
 
   .static {
     height: 80vh;
+  }
+
+  .static-background {
+    flex-direction: column;
   }
   
   .main-content-3 {

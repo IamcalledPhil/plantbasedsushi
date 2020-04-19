@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html>
+<title>Plant Based Sushi</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="scripts/menu-selection.js"></script>
+<link rel="stylesheet" href="/styles/header.css">
+<link rel="stylesheet" href="/styles/footer.css">
+<link rel="stylesheet" href="/styles/menu.css">
+<link rel="stylesheet" href="/styles/global.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+<body>
+
+    <main class="wrapper">
+        <header class="main-header">
+            <img class="logo" src="res/png/logox2.png" alt="Plant Based Sushi"/>
+            <div class="social-media-icons">
+                <a href="https://www.facebook.com/plantbasedsushi/" target="_blank" rel="noopener noreferrer" class="fa fa-facebook">
+                </a>
+                <a href="https://www.instagram.com/plantbasedsushi.eu/" target="_blank" rel="noopener noreferrer" class="fa fa-instagram">
+                </a>
+            </div>
+
+            <ul class="nav-items">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/menu">Menu</a></li>
+                <li><a href="/locations">Locations</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </header>
+
+
+        <section class="section parallax bg1">
+                <div class="photo-overlay">
+                    <h1>Menu</h1>
+            </div>
+        </section>
+        <section class="section static main-content-1">
+            <div class="static-background">
+                <div class="menu-card">
+                    <div class="menu-background">
+                        <div class="menu-selector">
+                            <button onClick="showMenu('mains')">Mains</button>
+                            <button onClick="showMenu('drinks')">Drinks</button>
+                            <button onClick="showMenu('desserts')">Desserts</button>
+                        </div>
+                        <div class="menu-content" id="mains">
+                            <div class="menu-item">
+                                <p class="name">Laksa Soup</p>
+                                <p class="description">Spicy coconut milk curry soup</p>
+                                <p class="price">8</p>
+                            </div>
+                            <img src="res/svg/thyme.svg">
+                            <div class="menu-item">
+                                <p class="name">Kimchi Mango Zushi (hand rolls)</p>
+                                <p class="description">Kimchi mango hand rolls with spicy tofy, sweetcorn with mushrooms</p>
+                                <p class="price">18</p>
+                            </div>
+                            <img src="res/svg/thyme.svg">
+                        </div>
+
+                        <div class="menu-content" id="drinks">
+                            <div class="menu-item">
+                                <p class="name">wine</p>
+                                <p class="description">mmmm no-no juice</p>
+                                <p class="price">8</p>
+                            </div>
+                            <img src="res/svg/thyme.svg">
+                            <div class="menu-item">
+                                <p class="name">beer</p>
+                                <p class="description">oooeeeee</p>
+                                <p class="price">18</p>
+                            </div>
+                            <img src="res/svg/thyme.svg">
+                        </div>
+
+                        
+                        <div class="menu-content" id="desserts">
+                            <div class="menu-item">
+                                <p class="name">Ice cream</p>
+                                <p class="description">aw yiss</p>
+                                <p class="price">8</p>
+                            </div>
+                            <img src="res/svg/thyme.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="main-footer">
+        </footer>
+    </main>
+
+
+</body>
+</html>

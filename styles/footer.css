@@ -2,3 +2,8 @@
     background-color: #000000;
     padding: 8em;
 }
+
+@media (max-width: 711px) {
+    .main-footer {
+        padding: 4em;
+    }}
