@@ -165,15 +165,14 @@
     .parallax {
       height: 40vh;
     }
-    
-    .parallax::after {
-      transform: translateZ(0px) scale(1);
-    }
   
     .static {
       height: min-content;
     }
 
+    .menu-selector {
+        margin-bottom: 0px;
+    }
 
     .menu-card {
         margin: 2em auto;

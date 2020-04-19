@@ -109,6 +109,10 @@ body {
     opacity: 70%;
 }
 
+.photo-overlay h1 {
+  text-align: center;
+}
+
 .main-content-1 {
   border-image-slice: 160 0 206 0;
   border-image-width: 40px 0px 40px 0px;
@@ -166,13 +170,13 @@ body {
    .infoleft{
     margin: 2em 0;
     border-image-width: 12px 35px 12px 0;
-    border-image-outset: 8px 25px 9px 0;
+    border-image-outset: 8px 25px 8px 0;
   }
 
   .inforight {
     margin: 2em 0 2em auto;
     border-image-width: 12px 0 10px 47px;
-    border-image-outset: 9px 0 8px 25px;
+    border-image-outset: 9px 0 7px 25px;
   }
 
   .illustrations-left , .illustrations-right {
@@ -180,7 +184,8 @@ body {
   }
 
   .info-section-background {
-    width: 60vw;
+    width: 70vw;
+    padding: 1em 2em;
   }
 
   .main-content-1 {

@@ -1,11 +1,4 @@
-p {
+p, h1, h2, h3, h4, a, button {
     font-family: 'Lora', serif;
 }
 
-h1 {
-    font-family: 'Lora', serif;
-}
-
-a {
-    font-family: 'Lora', serif;
-}

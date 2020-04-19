@@ -81,8 +81,13 @@
       width: 20vw;
   }
 
-  .location-info img{
-    width: 30vw;
+  .location-pic img {
+      width: 100%
+  }
+
+  .location-pic{
+    width: 20vw;
+    overflow: hidden;
   }
 
   .location-info {
@@ -132,10 +137,7 @@
     .parallax {
       height: 40vh;
     }
-    
-    .parallax::after {
-      transform: translateZ(0px) scale(1);
-    }
+
     
     .main-content-3 {
       height: 10vh;
@@ -148,6 +150,10 @@
 
     .map {
         margin: 2em auto 2em auto;
+    }
+
+    .location-pic {
+        width: 30vw;
     }
   
   }

@@ -25,12 +25,24 @@
 
 .nav-items li {
     margin-top: 0.6rem;
+    list-style-type: none;
+    padding: 0.7em 1em;
+    transition: 0.3s;
 }
 
 .nav-items li a {
     text-decoration: none;
     color: white;
-    margin: 0em 2em;
+    transition: 0.3s;
+}
+
+.nav-items li:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.nav-items li:hover a {
+    color: black;
 }
 
 .social-media-icons {  
