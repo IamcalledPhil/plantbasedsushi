@@ -14,7 +14,7 @@
 
 .footer-logo {
     width: 10vw;
-    margin: 0 auto;
+    margin: 0 auto 0.5em auto;
 }
 
 .footer-contact-info { 
@@ -39,7 +39,7 @@
 .left-footer-illustration { grid-area: 2 / 1 / 3 / 2; }
 .right-footer-illustration { grid-area: 2 / 3 / 3 / 4; }
 
-.main-footer img {
+.left-footer-illustration, .right-footer-illustration {
     width: 10vw;
     margin: auto;
 }

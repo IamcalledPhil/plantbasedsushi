@@ -89,7 +89,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 2em;
-    padding: 3em 2em;
+    padding: 3em 2em 0em 2em;
 }
 
 .menu-selector button {
