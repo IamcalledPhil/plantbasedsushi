@@ -1,0 +1,126 @@
+
+.wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+  }
+        
+  .section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .parallax::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(-2px) scale(2);
+    background-size: 100%;
+    z-index: -1;
+  }
+
+  .parallax {
+    color: white;
+    height: 100vh;
+  }
+  
+  .static {
+    border-top-style: solid;
+    color: #12171A;
+    height: min-content;
+  }
+  
+  .bg1::after {
+    background-image: url('/res/jpg/Sushi-TokyoDrift@TheStormFactoryNL_7.jpg');
+    background-size: cover;
+  }
+  
+  
+  .photo-overlay {
+      padding: 2em;
+      background-color: black;
+      opacity: 70%;
+  }
+  
+  .main-content-1 {
+    border-image-slice: 160 0 0 0;
+    border-image-width: 40px 0px 0px 0px;
+    border-image-repeat: stretch stretch;
+    border-image-outset: 36px 0px 0px 0px;
+    border-image-source:url('/res/png/blacktopborder.png')
+  }
+
+  .static-background {
+      background-color: #12171A;
+      width: 100%;
+      height: 100%;
+      color: white;
+      padding-bottom: 7em;
+  }
+
+  .news-article p {
+    margin: 0.5em auto;
+  }
+
+  .news-article img {
+    margin: 2em auto 2em auto;
+  }
+
+  .news-article {
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .news-article p, .news-article img {
+      width: 60vw
+  }
+
+  blockquote {
+    text-align: center;
+    font-size: 1.7rem;
+    font-style: italic;
+    display: block;
+    margin: 4em auto 2em auto;
+}
+
+.quote-author {
+    text-align: center;
+    font-style: italic;
+    display: block;
+    margin: 2em auto 5em auto;
+}
+
+
+ 
+  
+  /* mobile */
+  @media (max-width: 711px) {
+    .wrapper {
+      perspective: none;
+    }
+    .static {
+      z-index: 2;
+      position: relative;
+      width: 100%;
+    }
+  
+    .parallax {
+      height: 40vh;
+    }
+
+    .contact-logo {
+      width: 30vw;
+    }
+  
+  }
+  
+  

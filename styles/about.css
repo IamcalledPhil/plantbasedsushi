@@ -13,7 +13,6 @@ body {
         
   .section {
     position: relative;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,6 +32,7 @@ body {
   
   .parallax {
     color: white;
+    height: 100vh;
   }
   
   .static {
@@ -110,7 +110,6 @@ body {
       width: 50vw;
   }
 
-  
   .main-content-2 {
     border-image-slice: 213 27 218 27;
     border-image-width: 40px 0px 40px 0px;
@@ -126,7 +125,7 @@ body {
 
 .story-left {
     grid-area: 1 / 1;
-    margin: 1em 0 0 2em;
+    margin: 2em 0 0 2em;
 }
 
 .story-right {
