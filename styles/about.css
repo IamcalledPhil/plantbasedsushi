@@ -44,51 +44,10 @@ body {
     background-color: white;
     height: 100%;
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
   }
-  
-  .illustrations-right {
-    width: 30vw;
-    margin: auto 0 auto auto;
-  }
-  
-  .illustrations-left {
-    width: 30vw;
-    margin: auto auto auto 0;
-  }
-  
-  .infoleft {
-    border-style: solid;
-    margin: auto 5vw auto 0;
-    border-image-slice: 60 300 27 0;
-    border-image-width: 12px 47px 15px 0;
-    border-image-outset: 9px 45px 12px 0;
-    border-image-repeat: stretch stretch;
-    border-image-source:url('/res/png/textsection-left.png');
-  }
-  
-  .inforight {
-    border-style: solid;
-    margin: auto 0 auto 5vw;
-    border-image-slice: 60 0 27 300;
-    border-image-width: 12px 0 15px 47px;
-    border-image-outset: 9px 0 12px 35px;
-    border-image-repeat: stretch stretch;
-    border-image-source:url('/res/png/textsection-right.png');
-  }
-  
-  .info-section-background {
-    padding: 1em;
-    width: 50vw;
-    background-color: #12171A;
-    color: white;
-  }
-  
   
   .bg1::after {
-    background-image: url('/res/jpg/Sushi-TokyoDrift@TheStormFactoryNL_12.jpg');
+    background-image: url('/res/jpg/Portraits-TokyoDrift@TheStormFactoryNL_24.JPG');
     background-size: cover;
   }
   
@@ -114,12 +73,43 @@ body {
   }
   
   .main-content-1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border-image-slice: 160 0 206 0;
     border-image-width: 40px 0px 40px 0px;
     border-image-repeat: stretch stretch;
     border-image-outset: 36px 0px 40px 0px;
     border-image-source:url('/res/png/about1.png')
   }
+
+  .main-content-1 .static-background p {
+      width: 50vw;
+      margin: 0 auto;
+  }
+
+  .main-content-1 .static-background h2 {
+      margin-top: 4em;
+  }
+
+  .main-content-1 .static-background img {
+    color: #BC7987;
+    margin: 1em auto;
+    width: 20vw;
+  }
+
+  blockquote {
+      font-size: 2.7rem;
+      font-style: italic;
+      margin-top: 2em;
+  }
+
+  .quote-author {
+      font-style: italic;
+      width: 50vw;
+  }
+
   
   .main-content-2 {
     border-image-slice: 213 27 218 27;
@@ -127,6 +117,34 @@ body {
     border-image-repeat: stretch stretch;
     border-image-outset: 36px 0px 40px 0px;
     border-image-source:url('/res/png/about2.png')}
+
+.main-content-2 .static-background, .main-content-3 .static-background {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.story-left {
+    grid-area: 1 / 1;
+    margin: 1em 0 0 2em;
+}
+
+.story-right {
+    grid-area: 2 / 2;
+    margin: 0 2em 0 0;
+}
+
+.illustrations-right {
+    width: 20vw;
+    grid-area: 1 / 2;
+    margin: 2em auto;
+}
+
+.illustrations-left {
+    width: 20vw;
+    grid-area: 2 / 1;
+    margin: 2em auto;
+}
   
   .main-content-3 {
     border-image-slice: 191 27 0 27;
@@ -134,7 +152,7 @@ body {
     border-image-repeat: stretch stretch;
     border-image-outset: 36px 0px 40px 0px;
     border-image-source:url('/res/png/about3.png');
-    height: 20vh;
+    height: 100vh;
   }
   
     
@@ -167,18 +185,6 @@ body {
       width: 100vw;
     }
   
-     .infoleft{
-      margin: 2em 0;
-      border-image-width: 12px 35px 12px 0;
-      border-image-outset: 8px 25px 8px 0;
-    }
-  
-    .inforight {
-      margin: 2em 0 2em auto;
-      border-image-width: 12px 0 10px 47px;
-      border-image-outset: 9px 0 7px 25px;
-    }
-  
     .illustrations-left , .illustrations-right {
       margin: 1em auto;
     }
@@ -196,8 +202,28 @@ body {
       border-image-outset: 36px 0px 37px 0px;
     }
     
-    .main-content-3 {
-      height: 10vh;
+    .main-content-3, .main-content-2 {
+      height: min-content;
+    }
+
+    .story-right, .story-left{
+        margin: 0 2em 2em 2em;
+    }
+
+    .main-content-1 .static-background h2 {
+        margin-top: 2em;
+    }
+  
+    blockquote {
+        font-size: 1.5rem;
+        font-style: italic;
+        margin-top: 2em;
+    }
+
+    .main-content-2 .static-background, .main-content-3 .static-background {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
   }
   

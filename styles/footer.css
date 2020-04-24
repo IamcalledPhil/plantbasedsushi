@@ -1,4 +1,15 @@
 .main-footer {
+    border: solid;
+    border-image-slice: 180 0 0 0;
+    border-image-width: 40px 0px 0px 0px;
+    border-image-repeat: stretch stretch;
+    border-image-outset: 36px 0px 0px 0px;
+    border-image-source:url('/res/png/footertop.png');
+    position: relative;
+
+}
+
+.footer-background {
     background-color: #000000;
     padding: 4em;
     display: grid;
@@ -8,7 +19,7 @@
     text-align: center;
 }
 
-.main-footer svg {
+.footer-background svg {
     color: white;
 }
 
@@ -45,7 +56,16 @@
 }
 
 @media (max-width: 711px) {
+
     .main-footer {
+        z-index: 10;
+    }
+
+    .footer-logo {
+        width: 20vw;
+    }
+
+    .footer-background {
         padding: 2em;
     }
 
@@ -53,7 +73,7 @@
         grid-area: 1 / 1 / 4 / 4;
     }
 
-    .main-footer img { 
+    .left-footer-illustration, .right-footer-illustration { 
         display: none
     }
 }

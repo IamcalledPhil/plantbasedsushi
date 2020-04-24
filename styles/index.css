@@ -86,7 +86,6 @@ body {
   color: white;
 }
 
-
 .bg1::after {
   background-image: url('/res/jpg/Sushi-TokyoDrift@TheStormFactoryNL_12.jpg');
   background-size: cover;
