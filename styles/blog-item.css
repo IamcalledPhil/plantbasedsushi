@@ -11,7 +11,6 @@ body {
         
   .section {
     position: relative;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,6 +30,7 @@ body {
 
   .parallax {
     color: white;
+    height: 100vh;
   }
   
   .static {
@@ -61,67 +61,52 @@ body {
 
   .static-background {
       background-color: white;
-      width:100%;
-      height: 100%;
-      padding-bottom: 3em;
-  }
-
-  .location-row {
       width: 100%;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      margin-top: 4em;
+      height: 100%;
+      padding-bottom: 7em;
   }
 
-  .row-reverse {
-      flex-wrap: wrap-reverse;
+  .blog-article {
+    margin-top: 2em;
   }
 
-  .location-row img {
-      width: 20vw;
+  .blog-article p {
+    margin: 0.5em auto;
   }
 
-  .location-pic img {
-      width: 100%
+  .blog-article img {
+    margin: 2em auto 2em auto;
   }
 
-  .location-pic{
-    width: 20vw;
-    overflow: hidden;
-  }
-
-  .location-info {
+  .blog-article {
+    width:100%;
+    height: 100%;
     display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 
-  .location-text {
-    height: min-content;
-    display: inline-block;
+  .blog-article p, .blog-article img {
+      width: 60vw
   }
 
-  .infoleft .location-text {
-      margin: auto 0 auto 2rem;
-    }
+  .backbutton {
+    color: #12171A;
+    margin-left: 5em;
+    margin-top: 3em;
+    text-decoration: none;
+    width: 3rem;
+    position: absolute;
+  }
 
-  .inforight .location-text {
-    margin: auto 2rem auto 0;
-    text-align: right ;
-}
-
-.contact-number {
-    font-style: italic;
-}
-
-.map {
-    width: 80%;
-    margin: 5em auto 2em auto;
-    display: block;
-}
+  .backbutton::before {
+    font-size: 3rem;
+  }
 
 
 
+
+ 
   
   /* mobile */
   @media (max-width: 711px) {
@@ -138,22 +123,22 @@ body {
       height: 40vh;
     }
 
-    
-    .main-content-3 {
-      height: 10vh;
+    .contact-logo {
+      width: 30vw;
     }
 
-    .location-row img {
-        width: 30vw;
-        margin-top: 3em;
+    .backbutton {
+      position: unset;
+      margin-top: 1em;
+      margin-left: 1em;
     }
 
-    .map {
-        margin: 2em auto 2em auto;
+    .backbutton::before {
+      font-size: 2rem;
     }
 
-    .location-pic {
-        width: 30vw;
+    .blog-article {
+      margin-top: 0;
     }
   
   }

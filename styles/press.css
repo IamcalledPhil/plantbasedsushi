@@ -1,3 +1,6 @@
+body {
+  overflow-y: hidden;
+}
 
 .wrapper {
     height: 100vh;
@@ -64,6 +67,7 @@
       justify-content: center;
       flex-direction: row;
       flex-wrap: wrap;
+      padding-bottom: 3em;
   }
 
   .static-background p {
@@ -80,7 +84,7 @@
   height: 80vh;
   width: 30vw;
   border: solid;
-  margin: 4em 5vw 6em 5vw;
+  margin: 6em 5vw 6em 5vw;
   border-image-slice: 100 106 93 86;
   border-image-width: 20px 20px 20px 20px;
   border-image-repeat: stretch stretch;
@@ -93,15 +97,14 @@
   background-color: #12171A;
   color: white;
   padding: 1em;
+  overflow-y: auto;
+
 }
-
-
 
 .press-card-background * {
   width: 80%;
   display: block;
   margin: 1rem auto;
-  overflow: auto;
 }
 
 .press-card-background h3 {
@@ -119,13 +122,22 @@
       position: relative;
       width: 100%;
     }
+
+    .static-background {
+      flex-direction: column;
+    }
+
+    .static-background a {
+      margin: 1em auto;
+    }
   
     .parallax {
       height: 40vh;
     }
 
-    .contact-logo {
-      width: 30vw;
+    .press-card {
+      width: 70vw;
+      margin: 3em auto;
     }
   
   }

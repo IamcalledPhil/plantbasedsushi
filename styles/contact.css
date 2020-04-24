@@ -1,3 +1,6 @@
+body {
+  overflow-y: hidden;
+}
 
 .wrapper {
     height: 100vh;
@@ -71,7 +74,7 @@
 
   .contact-logo {
     width: 20vw;
-    margin: 6em auto 1em auto;
+    margin: 4em auto 1em auto;
   }
 
   .contact-links {
@@ -93,6 +96,7 @@
     .wrapper {
       perspective: none;
     }
+
     .static {
       z-index: 2;
       position: relative;

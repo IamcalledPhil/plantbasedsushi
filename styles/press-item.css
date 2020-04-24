@@ -1,4 +1,7 @@
-
+body {
+    overflow-y: hidden;
+  }
+  
 .wrapper {
     height: 100vh;
     overflow-x: hidden;
@@ -99,6 +102,20 @@
     margin: 2em auto 5em auto;
 }
 
+.backbutton {
+    color: white;
+    margin-left: 5em;
+    margin-top: 3em;
+    text-decoration: none;
+    width: 3rem;
+    position: absolute;
+  }
+
+  .backbutton::before {
+    font-size: 3rem;
+  }
+
+
 
  
   
@@ -119,6 +136,20 @@
 
     .contact-logo {
       width: 30vw;
+    }
+
+    .backbutton {
+        position: unset;
+        margin-top: 1em;
+        margin-left: 1em;
+      }
+  
+    .backbutton::before {
+    font-size: 2rem;
+    }
+
+    .news-article {
+    margin-top: 0;
     }
   
   }
